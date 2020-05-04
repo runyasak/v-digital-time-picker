@@ -1,4 +1,4 @@
-# vuetify-digital-timepicker
+# vuetify-digital-time-picker
 
 ## Project setup
 ```
