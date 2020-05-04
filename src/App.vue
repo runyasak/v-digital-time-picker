@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-container>
-      <vuetify-digital-time-picker/>
+      <vuetify-digital-time-picker v-model="timeValue"/>
     </v-container>
   </v-app>
 </template>
@@ -15,7 +15,9 @@ import VuetifyDigitalTimePicker from './VuetifyDigitalTimePicker.vue'
     VuetifyDigitalTimePicker
   }
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+  private timeValue = ''
+}
 </script>
 
 <style>
