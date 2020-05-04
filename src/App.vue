@@ -8,6 +8,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+
 import VuetifyDigitalTimePicker from './VuetifyDigitalTimePicker.vue'
 
 @Component({

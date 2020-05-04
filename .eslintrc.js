@@ -14,18 +14,18 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'import/order': ['error', {'newlines-between': 'always'}],
+    'import/order': ['error', { 'newlines-between': 'always' }],
     'vue/html-self-closing': ['error', {
-      "html": {
-        "void": "never",
-        "normal": "always",
-        "component": "always"
+      html: {
+        void: 'never',
+        normal: 'always',
+        component: 'always'
       },
-      "svg": "always",
-      "math": "always"
+      svg: 'always',
+      math: 'always'
     }],
     'vue/attributes-order': ['error', {
-      'order': [
+      order: [
         'DEFINITION',
         'LIST_RENDERING',
         'CONDITIONALS',
@@ -38,7 +38,7 @@ module.exports = {
         'EVENTS',
         'CONTENT'
       ],
-      "alphabetical": true
+      alphabetical: true
     }]
   },
   overrides: [
