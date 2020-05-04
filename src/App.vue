@@ -1,17 +1,18 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+  <v-app>
+    <v-container>
+      <vuetify-digital-time-picker/>
+    </v-container>
+  </v-app>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import HelloWorld from './components/HelloWorld.vue'
+import VuetifyDigitalTimePicker from './VuetifyDigitalTimePicker.vue'
 
 @Component({
   components: {
-    HelloWorld
+    VuetifyDigitalTimePicker
   }
 })
 export default class App extends Vue {}
