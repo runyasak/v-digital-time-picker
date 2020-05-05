@@ -7,7 +7,8 @@
       <v-text-field
         readonly
         :value="value"
-        v-on="on"
+        v-bind="$attrs"
+        v-on="{ ...$listeners, ...on }"
       />
     </template>
     <v-card class="d-flex align-center">
