@@ -38,7 +38,7 @@ module.exports = {
         'EVENTS',
         'CONTENT'
       ],
-      alphabetical: true
+      alphabetical: false
     }]
   },
   overrides: [
