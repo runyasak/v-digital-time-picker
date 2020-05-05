@@ -13,13 +13,19 @@
     <v-card class="d-flex align-center">
       <v-select
         append-icon=""
+        class="_v-digital-time-picker__select pt-0 mt-0 align-center"
+        hide-details
         :items="hours"
         rounded
         :value="hourValue"
         @change="onChangeValue($event, 'hour')"/>
-      :
+      <span class="_v-digital-time-picker__comma">
+        :
+      </span>
       <v-select
         append-icon=""
+        class="_v-digital-time-picker__select pt-0 mt-0 align-center"
+        hide-details
         :items="minutes"
         rounded
         :value="minuteValue"
@@ -75,3 +81,38 @@ export default class VuetifyDigitalTimePicker extends Vue {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+$font-size: 20px !default;
+
+._v-digital-time-picker {
+  &__select {
+    height: 80px;
+  }
+
+  &__comma {
+    font-size: $font-size;
+  }
+}
+
+.v-menu__content {
+  min-width: unset !important;
+  max-width: 300px;
+}
+
+.v-menu__content ::v-deep {
+  .v-select__selections {
+    width: 100px;
+    font-size: $font-size;
+    line-height: $font-size;
+
+    & > .v-select__selection.v-select__selection--comma {
+      margin: 0 auto;
+    }
+
+    & > input {
+      display: none;
+    }
+  }
+}
+</style>
