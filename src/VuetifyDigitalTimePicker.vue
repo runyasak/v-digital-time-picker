@@ -5,6 +5,7 @@
     offset-y>
     <template v-slot:activator="{ on }">
       <v-text-field
+        class="_v-digital-time-picker"
         readonly
         :value="value"
         v-bind="$attrs"
@@ -50,7 +51,7 @@ export default class VuetifyDigitalTimePicker extends Vue {
   private minutes: string[] = this.generateNumbStringArray(60)
   private active = false
 
-  @Prop(String) readonly value!: string
+  @Prop({ type: String, default: '' }) readonly value!: string
 
   get splitValue (): string[] {
     return this.value.split(':')
