@@ -2,7 +2,7 @@ import { mount, createLocalVue } from '@vue/test-utils'
 import Vue from 'vue'
 import Vuetify from 'vuetify'
 
-import VuetifyDigitalTimePicker from '@/VuetifyDigitalTimePicker.vue'
+import VDigitalTimePicker from '@/VDigitalTimePicker.vue'
 
 Vue.use(Vuetify)
 
@@ -11,7 +11,7 @@ const localVue = createLocalVue()
 describe('v-digital-time-picker', () => {
   it('is rendered', () => {
     const vuetify = new Vuetify()
-    const wrapper = mount(VuetifyDigitalTimePicker, {
+    const wrapper = mount(VDigitalTimePicker, {
       localVue,
       vuetify
     })

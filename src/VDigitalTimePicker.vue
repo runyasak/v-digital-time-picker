@@ -45,7 +45,7 @@ enum OnChangeValueType {
 }
 
 @Component
-export default class VuetifyDigitalTimePicker extends Vue {
+export default class VDigitalTimePicker extends Vue {
   private defaultZeroValue = '00'
   private hours: string[] = this.generateNumbStringArray(24)
   private minutes: string[] = this.generateNumbStringArray(60)
