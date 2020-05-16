@@ -9,7 +9,7 @@ Vue.use(Vuetify)
 const localVue = createLocalVue()
 
 describe('v-digital-time-picker', () => {
-  it('is rendered', () => {
+  it('should be rendered', () => {
     const vuetify = new Vuetify()
     const wrapper = mount(VDigitalTimePicker, {
       localVue,
