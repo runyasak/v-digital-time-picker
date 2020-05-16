@@ -18,4 +18,18 @@ describe('v-digital-time-picker', () => {
 
     expect(wrapper.find('._v-digital-time-picker').isVisible()).toBe(true)
   })
+
+  it('should have value prop', async () => {
+    const vuetify = new Vuetify()
+    const value = '11:00'
+    const wrapper = mount(VDigitalTimePicker, {
+      localVue,
+      vuetify,
+      propsData: {
+        value
+      }
+    })
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    expect((wrapper.find('._v-digital-time-picker').vm as any).internalValue).toBe(value)
+  })
 })
