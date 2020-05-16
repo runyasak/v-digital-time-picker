@@ -1,6 +1,7 @@
 {
   "name": "v-digital-time-picker",
   "version": "0.1.0",
+  "description": "Digital Time Picker for Vuetify",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
