@@ -1,5 +1,7 @@
 # v-digital-time-picker
 
+Digital Time Picker for Vuetify.
+
 ## Project setup
 ```
 npm install
