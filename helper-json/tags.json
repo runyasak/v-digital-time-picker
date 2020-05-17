@@ -1,0 +1,8 @@
+{
+  "v-digital-time-picker": {
+    "attributes": [
+      "value"
+    ],
+    "description": "Digital Time Picker <v-digital-time-picker>"
+  }
+}

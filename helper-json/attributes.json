@@ -1,0 +1,6 @@
+{
+  "v-digital-time-picker/value": {
+    "description": "Binding Value",
+    "type": "string"
+  }
+}
