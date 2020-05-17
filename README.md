@@ -4,7 +4,7 @@ Digital Time Picker for [Vuetify](https://vuetifyjs.com/).
 
 <p align="center">
   <img src="https://media.giphy.com/media/Ig9pQIseRoPtQZ9Atb/giphy.gif" />
-</p
+</p>
 
 ## Installation
 
