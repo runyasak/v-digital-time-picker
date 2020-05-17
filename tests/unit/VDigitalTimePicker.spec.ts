@@ -29,7 +29,6 @@ describe('v-digital-time-picker', () => {
         value
       }
     })
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    expect((wrapper.find('._v-digital-time-picker').vm as any).internalValue).toBe(value)
+    expect((wrapper.find('._v-digital-time-picker').vm).internalValue).toBe(value)
   })
 })
