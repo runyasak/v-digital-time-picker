@@ -84,9 +84,9 @@ You can use with [vee-validate](https://logaretm.github.io/vee-validate/)
 
 ## Props
 
-| Name    | Type   | Required | Description                                    |   |
-|---------|--------|----------|------------------------------------------------|---|
-| `value` | string | No       | Binding value of as time format (e.g. '11:00') |   |
+| Name    | Type   | Required | Description                                    |
+|---------|--------|----------|------------------------------------------------|
+| `value` | string | No       | Binding value of as time format (e.g. '11:00') |
 
 ## Events
 | Name    | Description                   | Parameters |
