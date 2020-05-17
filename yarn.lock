@@ -9957,17 +9957,6 @@ uuid@^3.0.1, uuid@^3.3.2:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
 
-v-digital-time-picker@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/v-digital-time-picker/-/v-digital-time-picker-0.1.0.tgz#08a0485dd73e0661a2c356b73dff4abea5cefe3c"
-  integrity sha512-T6b0y4gNyp2K8TAFI8yuAqSj8EF0zrRTmDQ4vgQTtVRRoK8m6UgW8sHBCO8WkO2YdgtnPwkjU0tfPtMSVu5MDA==
-  dependencies:
-    core-js "^3.6.4"
-    vue "^2.6.11"
-    vue-class-component "^7.2.3"
-    vue-property-decorator "^8.4.1"
-    vuetify "^2.2.11"
-
 v8-compile-cache@^2.0.3:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.1.0.tgz#e14de37b31a6d194f5690d67efc4e7f6fc6ab30e"
