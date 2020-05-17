@@ -2,6 +2,13 @@
   "name": "v-digital-time-picker",
   "version": "0.1.1",
   "description": "Digital Time Picker for Vuetify",
+  "author": "Runyasak Chaengnaimuang",
+  "license": "MIT",
+  "homepage": "https://github.com/runyasak/v-digital-time-picker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/runyasak/v-digital-time-picker.git"
+  },
   "types": "types/index.d.ts",
   "files": [
     "dist/*",
@@ -17,6 +24,11 @@
     "test:unit-watch": "vue-cli-service test:unit --watch",
     "lint": "vue-cli-service lint"
   },
+  "keywords": [
+    "typescript",
+    "vuetify",
+    "vue"
+  ],
   "dependencies": {
     "core-js": "^3.6.4",
     "vue": "^2.6.11",
