@@ -2,7 +2,9 @@
 
 Digital Time Picker for [Vuetify](https://vuetifyjs.com/).
 
-![Alt Text](https://media.giphy.com/media/Ig9pQIseRoPtQZ9Atb/giphy.gif)
+<p align="center">
+  <img src="https://media.giphy.com/media/Ig9pQIseRoPtQZ9Atb/giphy.gif" />
+</p
 
 ## Installation
 
