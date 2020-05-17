@@ -1,6 +1,6 @@
 {
   "name": "v-digital-time-picker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Digital Time Picker for Vuetify",
   "types": "types/index.d.ts",
   "files": [
