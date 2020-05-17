@@ -6,6 +6,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:bundle": "rm -rf dist && vue-cli-service build --target lib src/entry.ts",
     "test:unit": "vue-cli-service test:unit",
     "test:unit-watch": "vue-cli-service test:unit --watch",
     "lint": "vue-cli-service lint"
