@@ -1,3 +1,6 @@
+<a href="https://www.buymeacoffee.com/runyasak" target="_blank">
+  <img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+
 # 🚀 VDigitalTimePicker
 
 Digital Time Picker for [Vuetify](https://vuetifyjs.com/).
