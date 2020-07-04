@@ -2,8 +2,8 @@
   <img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
 <p>
-  <a href="https://actions-badge.atrox.dev/runyasak/v-digital-time-picker/goto?ref=master">
-    <img alt="Build Status" src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Frunyasak%2Fv-digital-time-picker%2Fbadge%3Fref%3Dmaster&style=flat" />
+  <a href="https://app.circleci.com/pipelines/github/runyasak/v-digital-time-picker">
+    <img alt="Build Status" src="https://circleci.com/gh/runyasak/v-digital-time-picker.svg?style=svg" />
   </a>
   <a href="https://npmjs.com/package/v-digital-time-picker"><img src="https://img.shields.io/npm/v/v-digital-time-picker.svg?style=flat" alt="NPM version"></a>
   <a href="https://npmjs.com/package/v-digital-time-picker"><img src="https://img.shields.io/npm/dm/v-digital-time-picker.svg?style=flat" alt="NPM downloads"></a>
