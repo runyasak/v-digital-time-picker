@@ -1,4 +1,4 @@
-# Buefy Changelog
+# VDigitalTimePicker Changelog
 
 ## 0.1.8
 
