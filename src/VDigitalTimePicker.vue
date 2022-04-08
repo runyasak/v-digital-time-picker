@@ -48,10 +48,15 @@ enum OnChangeValueType {
 export default class VDigitalTimePicker extends Vue {
   private defaultZeroValue = '00'
   private hours: string[] = this.generateNumbStringArray(24)
-  private minutes: string[] = this.generateNumbStringArray(60)
+  private minutes: string[] = []
   private active = false
 
   @Prop({ type: String, default: '' }) readonly value!: string
+  @Prop({ default: 1 }) minuteStep!: number
+
+  created () {
+    this.minutes = this.generateNumbStringArray(60, this.minuteStep)
+  }
 
   get splitValue (): string[] {
     return this.value.split(':')
@@ -65,8 +70,12 @@ export default class VDigitalTimePicker extends Vue {
     return this.splitValue[1] || this.defaultZeroValue
   }
 
-  generateNumbStringArray (length: number): string[] {
-    return Array.from({ length }, (value, index) => index.toString().padStart(2, '0'))
+  generateNumbStringArray (length: number, step = 1): string[] {
+    return this.generateNumberStringSteppedArray(0, length, step)
+  }
+
+  generateNumberStringSteppedArray (start: number, stop: number, step: number): string[] {
+    return Array.from({ length: (stop - start) / step + 1 }, (_, i) => (start + (i * step)).toString().padStart(2, '0'))
   }
 
   valueTemplate (hour: string, minute: string): string {
