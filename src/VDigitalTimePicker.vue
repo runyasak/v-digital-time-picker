@@ -47,15 +47,20 @@ enum OnChangeValueType {
 @Component
 export default class VDigitalTimePicker extends Vue {
   private defaultZeroValue = '00'
-  private hours: string[] = this.generateNumbStringArray(24)
+  private defaultHourValue = '00'
+  private hours: string[] = []
   private minutes: string[] = []
   private active = false
 
   @Prop({ type: String, default: '' }) readonly value!: string
   @Prop({ default: 1 }) minuteStep!: number
+  @Prop({ default: 0 }) startHour!: number
+  @Prop({ default: 24 }) endHour!: number
 
   created () {
-    this.minutes = this.generateNumbStringArray(60, this.minuteStep)
+    this.hours = this.generateNumbStringArray(this.startHour, this.endHour)
+    this.defaultHourValue = this.hours[0]
+    this.minutes = this.generateNumbStringArray(0, 60, this.minuteStep)
   }
 
   get splitValue (): string[] {
@@ -63,15 +68,17 @@ export default class VDigitalTimePicker extends Vue {
   }
 
   get hourValue (): string {
-    return this.splitValue[0] || this.defaultZeroValue
+    return this.splitValue[0] || this.defaultHourValue
   }
 
   get minuteValue (): string {
     return this.splitValue[1] || this.defaultZeroValue
   }
 
-  generateNumbStringArray (length: number, step = 1): string[] {
-    return this.generateNumberStringSteppedArray(0, length, step)
+  generateNumbStringArray (start: number, length: number, step = 1): string[] {
+    if (typeof start !== 'number') start = parseInt(start)
+    if (typeof length !== 'number') length = parseInt(length)
+    return this.generateNumberStringSteppedArray(start, length, step)
   }
 
   generateNumberStringSteppedArray (start: number, stop: number, step: number): string[] {
