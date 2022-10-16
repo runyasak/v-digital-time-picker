@@ -9,7 +9,9 @@
         <v-digital-time-picker
           v-model="timeValue"
           rounded
-          filled/>
+          filled
+          startHour=8
+          endHour=17 />
       </ValidationProvider>
       <v-btn @click="check">Check</v-btn>
     </v-container>
